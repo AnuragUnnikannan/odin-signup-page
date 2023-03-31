@@ -166,7 +166,31 @@ button {
 }
 
 @media (max-width: 450px) {
-    .form-grid {
-        grid-template-columns: 60%;
+    
+    .details {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
     }
+
+    .details p {
+        width: 85%;
+    }
+
+    #form-header {
+        text-align: center;
+    }
+    
+    .form-grid {
+        grid-template-columns: 100%;
+    }
+
+    .button-area {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
