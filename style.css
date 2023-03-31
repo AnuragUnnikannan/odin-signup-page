@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left {
+    background: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    height: 100vh;
+    width: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.odin-branding {
+    font-family: "Norse Bold", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 35%;
+}
+
+.odin-branding img {
+    height: 90px;
+}
+
+.credits {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.credits a {
+    color: white;
+}
+
+.right {
+    background: #f5f8f1;
+}
+
+.details {
+    margin-bottom: 35px;
+    padding: 100px 0px 0px 50px;
+}
+
+.details p {
+    font-weight: bold;
+    font-size: 18px;
+    width: 65%;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    color: #1F2937;
+}
+
+#form-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.input-area {
+    background: white;
+    padding: 20px 50px;
+    box-shadow: 0px 5px 5px 0px #E5E7EB;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Inter, Arial, sans-serif;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #1D4ED8;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+#errmsg {
+    font-size: 12px;
+    color: red;
+}
+
+.button-area {
+    padding: 30px 50px;
+}
+
+button {
+    background: #596D48;
+    color: #E5E7EB;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#accent {
+    color: #596D48;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: auto;
+        height: 40vh;
+    }
+
+    .odin-branding {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-grid {
+        grid-template-columns: 60%;
+    }
+}
