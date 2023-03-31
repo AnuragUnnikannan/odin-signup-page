@@ -12,4 +12,6 @@ btn.addEventListener("click", () => {
         confpswd.setCustomValidity("");
         document.querySelector("#errmsg").innerText = "";
     }
+    pswd.reportValidity();
+    confpswd.reportValidity();
 });
